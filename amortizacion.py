@@ -1,11 +1,7 @@
-import numpy as np
 # Funcion amortizacion, calcula el valor de la amortización.
-
-
 def amortizacion(monto, interes, periodos):
     # print("{:.2f}".format(A))
     return monto*(interes*(1+interes)**(periodos)/((1+interes)**(periodos)-1))
-
 
 # Valores iniciales
 m = 15000  # monto
@@ -17,8 +13,6 @@ A = amortizacion(m, i, p)
 
 tabla = []
 tabla.append([0,0,0,0,m])
-
-print(np.array(tabla))
 
 for x in range(p):
     renta = round(A,2)
