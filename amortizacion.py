@@ -3,6 +3,7 @@ def amortizacion(monto, interes, periodos):
     # print("{:.2f}".format(A))
     return monto*(interes*(1+interes)**(periodos)/((1+interes)**(periodos)-1))
 
+
 # Valores iniciales
 m = 15000  # monto
 i = 0.04  # interes
